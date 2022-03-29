@@ -8,6 +8,15 @@
               integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
               crossorigin="anonymous">
         <style>
+            .accordion-button::after {
+                text-align: right;
+                background-image: none !important;
+                content: '▼' !important;
+            }
+
+            .accordion-button:not(.collapsed)::after {
+                text-align: left;
+            }
         </style>
     </head>
     <body>
@@ -60,7 +69,8 @@
                         <li>* Real Audio Device, visually & sonically unique</li>
                         <li>* animated GIF</li>
                         <li>* Airdrop special in the next weeks<br>
-                              &nbsp;&nbsp;(hint: it's another NFT thingy)</li>
+                            &nbsp;&nbsp;(hint: it's another NFT thingy)
+                        </li>
                     </ul>
 
                     <div class="accordion" id="faq">
@@ -172,7 +182,8 @@
                                  data-bs-parent="#faq">
                                 <div class="accordion-body">
                                     You might do as you please.<br>
-                                    But maybe hold it just long enough to receive something special via airdrop in the next weeks.
+                                    But maybe hold it just long enough to receive something special via airdrop in the
+                                    next weeks.
                                 </div>
                             </div>
                         </div>
